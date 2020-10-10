@@ -5,7 +5,8 @@ def salaryFormat(ageGrp, salary = None):
     ret = dict(row)
     if salary != None:
         for i in ret:
-            ret[i] = salary*ret[i]*0.01
+            if i != "grp":
+                ret[i] = salary*ret[i]*0.01
         return ret
     else:
         return row
