@@ -1,5 +1,9 @@
-def columns(age):
+import textConverter
+
+
+def column(age):
     #pull columns based on age
+    textConverter.column()
 
 def salaryFormat(salary, columnList):
     #format outputs based on salary and percentages
