@@ -1,7 +1,7 @@
 def pull():
     #pulls data from textfile
     f= open("data1.txt",'r')
-    keys = ["grp", "fd", "equity","commodities","realEstate","genExpenses","health","car","electricity","water"]
+    keys = ["agegrp","fd","equity","commodities","RealEstate","healthIns","vehicleIns","houseIns","studentLoan","personalLoan","mortgage","electricity","water","rent","food"]
     l = f.readlines()
     ret = []
     for i in l:
@@ -24,7 +24,7 @@ def column(n):
     ret = pull()
     d = {}
     for i in ret:
-        if(i['grp']==n):
+        if(i['agegrp']==n):
             d=i;
     print(d)
 

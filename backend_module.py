@@ -5,7 +5,9 @@ def salaryFormat(ageGrp, salary = None):
     ret = dict(row)
     if salary != None:
         for i in ret:
-            if i not in ["grp","genExpenses","health","car","electricity","water"] :
+            if i == 'vehicleIns':
+                ret[i] = 
+            elif i in ["fd","equity","commodities","RealEstate","mortgage"]:
                 ret[i] = salary*ret[i]*0.01
         return ret
     else:
@@ -19,4 +21,5 @@ def salaryFormat(ageGrp, salary = None):
     
 def sliderCalculation(columnName, sliderPercentage, salary, columnDict):
     #adjust other columns based on given columnNumber sliderPercentage
+    pass
     
