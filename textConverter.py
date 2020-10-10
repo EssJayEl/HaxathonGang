@@ -1,7 +1,7 @@
 def pull():
     #pulls data from textfile
     f= open("data1.txt",'r')
-    keys = ["grp", "fd", "equity","loan","leisure"]
+    keys = ["grp", "fd", "equity","leisure"]
     l = f.readlines()
     ret = []
     for i in l:
