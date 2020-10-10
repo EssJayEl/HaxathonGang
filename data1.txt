@@ -1,2 +1,6 @@
+A:5:35:5:20
+B:10:20:30:40
+C:20:30:40:50
+D:30:10:15:70
+E:25:15:10:40
 #agegrp-fd:number-equity:number-commodities:number-leisure:number
-A-
