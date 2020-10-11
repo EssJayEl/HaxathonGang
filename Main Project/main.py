@@ -50,7 +50,7 @@ Age_L.config(foreground='black')
 
 Age_L.grid(row=3,column=1, sticky="e")
 
-Sal_L = Label(Form, text = "ENTER YOUR SALARY", font=('arial', 14), bd=15)
+Sal_L = Label(Form, text = "ENTER YOUR MONTHLY SALARY", font=('arial', 14), bd=15)
 
 Sal_L.config(foreground='black')
 
