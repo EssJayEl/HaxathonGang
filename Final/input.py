@@ -1,6 +1,20 @@
 from tkinter import *
 import backend_module
 
+def input_as(age,sal):
+    x=""
+    if age=='21-28':
+        x="A"
+    elif age=='29-35':
+        x="B"
+    elif age=='36-42':
+        x="C"
+    elif age=='43-48':
+        x="D"
+    sal = int(sal)
+
+    backend_module.salaryFormat(x,sal)
+
 
 root = Tk()
 root.destroy()
@@ -56,18 +70,5 @@ HT1.grid(row=5, column=2)
 HT1.config(background="white")
 title.pack(fill=X)
 
-
-def input_as(age,sal):
-    x=""
-    if age=='21-28':
-        x="A"
-    elif age=='29-35':
-        x="B"
-    elif age=='36-42':
-        x="C"
-    elif age=='43-48':
-        x="D"
-    sal = int(sal)
-
-    backend_module.salaryFormat(x,sal)
+root.mainloop()
 
